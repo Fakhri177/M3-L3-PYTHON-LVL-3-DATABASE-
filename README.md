@@ -1,1 +1,2 @@
-# M3-L3-PYTHON-LVL-3-BOT PORTO-
+#  **BOT PORTOFOLIO**
+## Bot discord yang akan membantumu dalam menyimpan dan menata proyek
