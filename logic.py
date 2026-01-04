@@ -123,7 +123,13 @@ WHERE project_name=? AND user_id=?
         sql = """DELETE FROM skills WHERE skill_id = ? AND project_id = ? """
         self.__executemany(sql, [(skill_id, project_id)])
 
+    def delete_project_skills(self, project_id, skill_id):
+        sql = """DELETE FROM project_skills WHERE skill_id = ? AND project_id = ? """
+        self.__executemany(sql, [(skill_id, project_id)])
 
+    def delete_status(self, status_id):
+        sql = """DELETE FROM status WHERE status_id = ? """
+        self.__executemany(sql, [(status_id,)])    
 
 if __name__ == '__main__':
     manager = DB_Manager(DATABASE)
